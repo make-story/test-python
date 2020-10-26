@@ -94,6 +94,10 @@ x = [n for n in range(5)]
 x = list()
 x = list(range(5))
 
+# 리스트 반대로
+for i in range(4, 0-1, -1):
+    print("현재변수 반복: {}".format(i)) # 4 3 2 1 0
+
 # List Comprehension
 # 기존방식
 new_list = []
@@ -134,8 +138,8 @@ x.reverse()
 print(x) # [9, 7, 5, 3]
 # 문제!
 x = [3, 5, 7, 9]
-print(x.reverse()) # None
-print(x[::-1]) # [3, 5, 7, 9]
+print(x.reverse()) # None - 반전시킴 [9, 7, 5, 3]
+print(x[::-1]) # [3, 5, 7, 9] - ::-1 로 다시 반전시킴
 
 # sort()
 x = [93, 3, 17, 11]

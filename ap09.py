@@ -8,6 +8,7 @@ print(factorial(0)) # 1
 print(factorial(1)) # 1
 
 
+# Iteration vs. Recursion
 # 재귀호출
 def factorial(n):
     if n <= 1:
@@ -15,7 +16,6 @@ def factorial(n):
     else:
         return n * factorial(n-1)
 print(factorial(5)) # 120
-
 # 문제!
 # 재귀호출을 반복(Iteration) 형태로 변환한 문제 
 def factorial(n):
