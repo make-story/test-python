@@ -284,6 +284,22 @@ greet.strip()
 # 'Hello Bob'
 
 
+if haystackstr.lower().find(needlestr.lower()) != -1:
+  # True
+
+a = "MandY"
+alow = a.lower()
+if "mandy" in alow:
+    print "true"
+
+string1 = "hi"
+string2 = "HI"
+if string1.lower() == string2.lower():
+    print "Equals!"
+else:
+    print "Different!"
+    
+
 ########################################
 # • 어떤 이름이 문자열 안에 존재하는지 확인하는 코드
 ########################################
