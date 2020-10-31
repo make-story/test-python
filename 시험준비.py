@@ -166,7 +166,11 @@ for p in palindrome_list:
 ########################################
 
 # Slicing
-# [ start : stop : step ]
+# [:::] 범위 선택자 (슬라이싱) slicing
+# [ start : end : step ]
+# step이 양수일 때: 오른쪽으로 step만큼 이동하면서 가져옵니다.
+# step이 음수일 때: 왼쪽으로 step만큼 이동하면서 가져옵니다.
+
 x = 'computer'
 x[1:4]   # Items 1 to 3 : 출력 'omp'
 x[1:6:2] # Items 1, 3, 5 : 출력 'opt'
@@ -309,19 +313,14 @@ else:
 print("안녕하세요".find("안녕")) # 0
 print("안녕안녕하세요".rfind("안녕")) # 2
 
+# 대소문자 구분? 구분한다.
 s = "welcome to python"
-s.endswith("thon")
-# True
-s.startswith("good")
-# False
-s.find("come")
-# 3
-s.find("become")
-# -1
-s.rfind("o")
-# 15
-s.count("o")
-# 3
+s.endswith("thon") # True
+s.startswith("good") # False
+s.find("come") # 3
+s.find("become") # -1
+s.rfind("o") # 15
+s.count("o") # 3
 
 ########################################
 # • nested(중첩) <-> chained conditional (체인조건부) 변환
@@ -356,6 +355,17 @@ else:
 # • 반복문 사용 방식 (for 예시 하나 주고 다른 방식으로 변경)
 # while, 이터레이터, 제너레이터
 ########################################
+
+# len()
+# range()
+# enumerate()
+
+# 리스트 내포 - List Comprehension
+# [ expression for item in list if conditional ]
+# 변수 = [표현식/반환값 for 반복자 in 반복할 수 있는 것/리스트 if 조건문]
+arr = ["사과", "자두", "초콜릿"]
+out = [fruit for fruit in arr if fruit != "초콜릿"]
+print(out) # ['사과', '자두']
 
 l = [1, 2, 1, 2]
 value = 2
