@@ -1,6 +1,11 @@
 
-# 중요!
+# 리터럴
+# 자료를 리터럴이라고도 하는데, 숫자이든지 문자이든지 어떠한 '값'자체를 의미합니다.
 
+
+# 리스트 생성
+# test = [] 리터럴
+# list() 함수
 
 # 리스트 내포 - List Comprehension
 # [ expression for item in list if conditional ]
@@ -21,6 +26,8 @@ print(out) # ['사과', '자두']
 # list(range(0, 10, 2)) # [0, 2, 4, 6, 8]
 # list(range(0, 10 + 1)) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # list(range(10, 0-1, -1)) # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+
+
 
 
 # Concatenating
